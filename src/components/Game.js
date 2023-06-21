@@ -21,11 +21,22 @@ const Game = () =>{
         </button>
     )
 
+    
+    let status;
+    if (winner) status = "Winner is : " + winner;
+    else if (!board.includes(null)) status = 'Match Draw'
+    else  status = "Next player: " + (xIsNext ? "X" : "O");
+
+
     return(
         <>
             <Board squares={board} onClick={handleClick}/>
             <div>
-                <p>{winner? 'Winner: ' + winner : 'Next Player: ' + (xIsNext? 'X' : 'O')}</p>
+                {/* <p>{winner? 'Winner: ' + winner : 'Next Player: ' + (xIsNext? 'X' : 'O')}</p> */}
+                <p></p>
+                {status}
+                <p></p>
+            
                 {renderMoves()}
             </div>
         </>

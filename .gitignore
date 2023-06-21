@@ -10,7 +10,6 @@ public/manifest.json
 public/robots.txt
 src/reportWebVitals.js
 
-
 # dependencies
 /node_modules
 /.pnp

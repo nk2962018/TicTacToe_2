@@ -20,10 +20,10 @@ const CalculateWinner = (squares) => {
     return null;
 }
 
-const squares = [
-    null,null,null,
-    'X','X','O',
-    null,null,null
-];
+// const squares = [
+//     null,null,null,
+//     'X','X','O',
+//     null,null,null
+// ];
 
 export default CalculateWinner;
